@@ -2,9 +2,10 @@ import os
 
 import streamlit as st
 from dotenv import load_dotenv
-from langchain.agents import AgentType, initialize_agent, load_tools
-from langchain.callbacks import StreamlitCallbackHandler
-from langchain.chat_models import ChatOpenAI
+from langchain.agents import AgentType, initialize_agent
+from langchain_community.agent_toolkits.load_tools import load_tools
+from langchain.callbacks.streamlit import StreamlitCallbackHandler
+from langchain_community.chat_models import ChatOpenAI
 from langchain.memory import ConversationBufferMemory
 from langchain.prompts import MessagesPlaceholder
 
